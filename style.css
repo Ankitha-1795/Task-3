@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Quiz + Jokes Box */
+.quiz-box {
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#quiz p {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  background-color: #ffdfba;
+  margin: 10px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  width: 90%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.options label:hover {
+  background-color: #ffe6cc;
+}
+
+button {
+  background-color: #6a82fb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #4e62e2;
+}
+
+#result {
+  font-size: 1.4rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+/* Jokes Section */
+.jokes-section {
+  margin-top: 30px;
+}
+
+.jokes-section h2 {
+  color: #ff6f61;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#jokeList {
+  list-style-type: none;
+  padding: 0;
+  color: #333;
+}
+
+#jokeList li {
+  background-color: #e0f7fa;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quiz-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
